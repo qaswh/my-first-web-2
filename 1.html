@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>나를 소개합니다.</title>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            text-align: center;
+            border-width: 5px;
+            border-color: red;
+            border-style: solid;
+            padding: 20px;
+            margin: 20px;
+
+        }
+        a {
+            color:rgb(52, 42, 131);
+            text-decoration: underline;
+        }
+        .mid {
+            color:rgb(49, 62, 30);
+            text-decoration: none;
+        }
+        #daum{
+            color:rgb(110, 2, 2);
+            text-decoration: underline;
+        
+        }
+        }
+        img{
+            border-width: 5px;
+            border-color: aqua;
+            border-style: solid;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>저를 소개합니다.</h1>
+    <h2>중학교</h2>
+    <ol>
+        <a><li>진산중학교</li></a><br>
+        <img src="진산중.jpg" width="300">
+        <a><li>해원중학교 </li> </a>
+        <img src="해원중.jpg" width="300">
+    </ol>
+    <h2>고등학교</h2>
+    <ol>
+        <a><li>청라고등학교</li></a>
+        <img src="청라고.jpg" width="300"><br>
+    </ol>
+    <a href="https://www.instagram.com/sswh_457/" style="color:pink" target="_blank" >my instagram</a><br>
+    <div id="gri">
+        <div>sssfgfgfgfg</div>
+        <div>fgjfkgjfgg</div>
+    </div>
+    <style>
+        div {
+        border: 5px solid purple;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        }
+        #gri{
+            border: 5px solid pink;
+        }
+        @media(max-width: 700px){
+            #gri{
+                display: none;
+            }
+        }
+    </style>
+
+    <ul>
+        <li><a href="http://jinsan.icems.kr/main.do" 
+            title="진산중학교" target="_blank" class="mid">
+            진산중학교</a></li>
+        <li><a href="http://haewon.icems.kr/main.do" 
+            title="해원중학교" target="_blank" class="mid">
+            해원중학교</a></li>
+        <li><a href="http://cheongra.icehs.kr/main.do" 
+            title="청라고등학교" target="_blank" id="daum">
+            청라고등학교</a></li></li>
+    </ul>
+    <input type="button" value="day" onclick="
+    if (document.querySelector('body').dataset.mode === 'night'){
+        document.querySelector('body').style.backgroundColor = 'white'
+        document.querySelector('body').style.color='black'
+        document.querySelector('body').dataset.mode='day'
+        this.value='day'
+    }
+    else{document.querySelector('body').style.backgroundColor = 'black'
+        document.querySelector('body').style.color='white'
+        document.querySelector('body').dataset.mode='night'
+        this.value='night'
+    }
+    "
+
+</body>
+</html>
